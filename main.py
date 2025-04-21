@@ -108,8 +108,10 @@ elif conversion_type == "Temperature":
     to_unit = st.selectbox("To", temperature_units)
     result = convert_temperature(input_value, from_unit, to_unit)
 
-# Display result
+# Display results
 if conversion_type != "Temperature":
     st.success(f"{input_value} {from_unit} = {result:.4f} {to_unit}")
 else:
     st.success(f"{input_value} {from_unit} = {result:.2f} {to_unit}")
+
+
